@@ -16,7 +16,7 @@ function App() {
       }
       setError('');
       
-      const res = await fetch('http://localhost:3000/bfhl', {
+      const res = await fetch('https://ec2-13-201-54-155.ap-south-1.compute.amazonaws.com/:3000/bfhl', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
