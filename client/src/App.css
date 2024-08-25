@@ -1,0 +1,149 @@
+/* General styling for the entire application */
+#root{
+  width:100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  display: grid;
+  place-items: center;
+  overflow: scroll;
+}
+
+.App {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 15px;
+  border: 1px solid #007BFF;
+  border-radius: 8px;
+  font-size: 16px;
+  resize: none;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s;
+}
+
+textarea:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+/* Styling for the submit button */
+button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Error message styling */
+p {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* Styling for the response area */
+pre {
+  background-color: #f0f8ff;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 14px;
+  color: #2c3e50;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Section title styling */
+h1, h3 {
+  color: #007BFF;
+}
+
+/* Styling for the multi-select dropdown from react-select */
+.basic-multi-select {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.select__control {
+  border-radius: 8px;
+  box-shadow: none;
+  border: 1px solid #007BFF;
+  transition: border-color 0.3s;
+}
+
+.select__control:hover {
+  border-color: #0056b3;
+}
+
+.select__control--is-focused {
+  border-color: #0056b3;
+  box-shadow: 0 0 0 1px #0056b3;
+}
+
+.select__multi-value {
+  background-color: #007BFF;
+  color: white;
+  border-radius: 4px;
+}
+
+.select__multi-value__label {
+  color: white;
+}
+
+.select__multi-value__remove {
+  color: white;
+}
+
+.select__multi-value__remove:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .App {
+    padding: 15px;
+  }
+
+  textarea {
+    height: 120px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  h1, h3 {
+    font-size: 18px;
+  }
+}
